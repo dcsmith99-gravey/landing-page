@@ -11,12 +11,20 @@ body {
     background-color: #1F2937;
 }
 
-.header {
+/*.header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     margin-left: 50px;
-    margin-right: 50px
+    margin-right: 50px;
+    align-items: center;
+}*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 100px;
 }
 
 .logo {
@@ -24,24 +32,44 @@ body {
     font-size: 24px;
 }
 
-.hero-container {
+/*.hero-container {
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 50px
+}*/
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
 }
+
+.hero-text p {
+    max-width: 500px;
+}
+
 
 .hero-text h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin: 0
+}
+
+.hero-text button {
+    border: none;
+    padding: 4px 16px;
 }
 
 .hero-image img {
     height: auto;
-    width: 500px
+    width: 450px
 }
+
 
 .hero-text p,
 .nav-links,
@@ -75,17 +103,47 @@ li a {
 
 .info-cards {
     display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
 
 .quote-section {
     display: flex;
     background-color: #E5E7EB;
-    justify-items: center;
 }
 
 .quote-section footer {
+    /*display: flex;*/
     font-weight: 700;
+}
 
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+    max-width: 800px;
+    margin: 50px auto;
 }
 
 .quote p {
@@ -93,18 +151,27 @@ li a {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
-    margin: 50px
+    margin: 0px
 }
 
 .cta-container {
     background-color: #3882f6;
-    margin: 50px;
+    margin: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
+
+
 .cta-text {
-    padding: 16px
+    padding: 16px;
+    color: #F9FAF8;
+}
+
+.cta-text p {
+    margin: 0;
+    font-weight: 300;
 }
 
 .cta-container button {
@@ -113,10 +180,19 @@ li a {
 
 button {
     background-color: #3882f6;
+    border-radius: 6px;
+    color: #F9FAF8;
+}
+
+
+.signup {
+    border: 2px solid #F9FAF8;
+    padding: 4px 16px;
 }
 
 .cta-text h3 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer {
